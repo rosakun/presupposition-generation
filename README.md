@@ -1,5 +1,17 @@
 # presupposition-generation
 
+## datasets
+
+This folder contains the datasets PECaN, ECaN, and PGen.
+  PECaN - Presupposition, Entailment, Contradiction, and Neutral. 
+          The augmented Natural Language Inference task containing the fourth class, Presupposition.
+          The label 0 corresponds to 'presupposition', 1 to 'entailment', 2 to 'contradiction', and 3 to 'neutral'.
+
+  ECaN - The PECaN dataset, but without the presupposition class. All presupposition items are converted to entailment items, and half the entailment items are then removed           in order to have a balanced dataset.
+         The label 0 corresponds to 'entailment', 1 to 'contradiction', and 2 to 'neutral'.
+
+  PGen - The dataset for presupposition generation. Consists of premise - presupposition list pairs. 
+
 ## generate_presuppositions_using_SpaCy
 
 This folder includes code that uses SpaCy to extract elementary presuppositions from cross-examinations. 
