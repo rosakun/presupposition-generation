@@ -11,6 +11,12 @@ We include three files as examples: 'randykinnard.csv' is an example of the acce
 
 ## generate_presuppositions_using_GPT
 
+This folder includes code that generates presuppositions from cross-examination questions using GPT (da-vinci-003).
+First, it includes a code that pre-processes .tsv files containing cross-examinations in the format given by the website https://www.patrickmalonelaw.com/useful-information/legal-resources/attorneys/legal-resources-attorneys-injured-clients/cross-examination-transcripts/ . An example of such a file is given by 'cross_examinations.tsv'. An example preprocessed file is 'cross_examinations_preprocessed.tsv'.
+It also includes a code that takes the preprocessed cross-examination file as input, and uses GPT to generate presuppositions triggered by each question. It outputs
+premise-hypothesis pairs in a .json file, an example is 'output.json'.
+As a default, the premise-hypothesis pairs are labeled as 'entailment', or 'E'. This is because GPT generally outputs entailments instead of presuppositions. The pairs that are actually presuppositions must be manually checked and changed. In addition, the fields 'type' and 'trigger_type' are given default values 'na', that must also be changed manually in case of real presupposition items.
+
 ## presupposition_augmentation
 
 This folder includes code that re-embeds the presuppositions of premise-presupposition pairs under negation, interrogation, modals and conditionals.
