@@ -2,7 +2,7 @@
 
 ## datasets
 
-This folder contains the datasets PECaN, ECaN, and PGen.
+This folder contains the datasets PECaN, ECaN, and PGen.<br>
   PECaN - Presupposition, Entailment, Contradiction, and Neutral. 
           The augmented Natural Language Inference task containing the fourth class, Presupposition.
           The label 0 corresponds to 'presupposition', 1 to 'entailment', 2 to 'contradiction', and 3 to 'neutral'.
